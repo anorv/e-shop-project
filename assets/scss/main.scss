@@ -1,0 +1,16 @@
+// UTILITIES
+@import 'utilities/_variables.scss';
+@import 'utilities/_mixins.scss';
+@import 'utilities/_normalize.scss';
+
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+
+
+// LAYOUTS
+   // header
+
+@import 'layout/_header.scss';
+@import 'layout/_main_html.scss';

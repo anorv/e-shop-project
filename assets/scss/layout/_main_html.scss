@@ -1,0 +1,99 @@
+// Raudonu liniju start
+
+.red_line_container {
+    margin-top: 5%;
+    opacity: 0.3;
+    @include responsive-md() {
+        margin-top: 3%;
+    }
+
+
+    .red_line1 {
+        width: 30%;
+        height: 2px;
+        background-color: red;
+        margin: 0 auto;
+        border-radius: 20%;
+        margin-bottom: 5px;
+    }
+    .red_line2 {
+        width: 40%;
+        height: 2px;
+        background-color: red;
+        margin: 0 auto;
+        border-radius: 20%;
+        margin-bottom: 5px;
+    }
+    .red_line3 {
+        width: 50%;
+        height: 2px;
+        background-color: red;
+        margin: 0 auto;
+        border-radius: 20%;
+        margin-bottom: 5%;
+    }
+}
+// Raudonu liniju END
+
+// Susipazinkime START
+.main_container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    // width: 100%;
+    margin-bottom: 5%;
+    @include responsive-md() {
+        display: block;
+    }
+
+    .main_conteiner_div {
+        width: 48%;
+        display: block;
+        margin: auto;
+        @include responsive-md() {
+            background-image: url('../img/background1.jpg');
+            background-size: cover;
+            // background-position: center;
+            background-repeat: no-repeat;
+            height: 40vh;
+          width: 100%;
+        }
+
+        .main_container_img {
+            // width: 48%;
+            max-width: 100%;
+            @include responsive-md() {
+               display: none;
+              }
+        }
+    }
+
+    .main_container_content {
+        width: 48%;
+        font-family: "Poppins", sans-serif;
+        line-height: 2;
+        @include responsive-md() {
+                
+          width: 100%;
+        }
+        h2 {
+            color: rgb(41, 36, 36);
+            @include responsive-md() {
+                
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            color: rgb(82, 77, 77);
+            padding: 0  23px 0 23px;
+        }
+        @include responsive-md() {
+          
+            font-size: 1rem;
+        }
+    }
+}
+
+// Susipazinkime END
+
