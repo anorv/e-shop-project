@@ -14,10 +14,9 @@
            cursor: pointer;
            background-color: rgb(156, 50, 43);
            opacity: 0.7;
-           @include responcive-md1(){
-               margin-top: 10px;
-
-             }
+           @include responsive-md1() {
+            margin-top: 10px;
+        }
 
        }
 }
