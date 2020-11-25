@@ -648,9 +648,9 @@ nav .nav_links li a {
 
 .footer_subscribe {
   text-align: center;
-  height: 30vh;
   padding-top: 10px;
   font-family: "Poppins", sans-serif;
+  background-color: #f5eeee;
 }
 
 .footer_subscribe .subscribe {
@@ -661,15 +661,27 @@ nav .nav_links li a {
   border: none;
   padding: 12px;
   cursor: pointer;
-  background-color: #ca7a66;
+  background-color: #9c322b;
   opacity: 0.7;
 }
 
 .footer_container {
+  background-color: #f5eeee;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #524d4d;
+  font-size: 0.7rem;
 }
 
 .footer_container .footer_contacts {
@@ -678,13 +690,24 @@ nav .nav_links li a {
 
 .footer_container .footer_social_logos {
   width: 33.33%;
+  padding-top: 20px;
 }
 
 .footer_container .footer_social_logos a img {
   width: 40px;
 }
 
+.footer_container .footer_social_logos p {
+  color: #524d4d;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
 .footer_container .footer_content {
   width: 33.33%;
+}
+
+.footer_container .footer_content p {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -12,6 +12,11 @@
     }
 }
 
+@mixin responsive-md1 {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
 
 
 // // i SCSS rasom
