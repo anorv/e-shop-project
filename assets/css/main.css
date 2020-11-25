@@ -402,6 +402,12 @@ nav .logo img {
   width: 100px;
 }
 
+@media (max-width: 992px) {
+  nav .logo img {
+    width: 90px;
+  }
+}
+
 nav .nav_links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,7 +429,7 @@ nav .nav_links {
     position: absolute;
     right: 0;
     height: 93vh;
-    top: 9.5vh;
+    top: 9.4vh;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -466,6 +472,41 @@ nav .nav_links li a {
   text-transform: uppercase;
 }
 
+.cart_button {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart_button img {
+  width: 35px;
+}
+
+.cart_button .cart_div {
+  position: absolute;
+  top: -9px;
+  left: 14px;
+}
+
+.carts_button_burger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .carts_button_burger {
+    display: block;
+  }
+}
+
+.cart_button_nav {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .cart_button_nav {
+    display: none;
+  }
+}
+
 .burger {
   display: none;
 }
@@ -475,6 +516,7 @@ nav .nav_links li a {
   height: 3px;
   margin: 5px;
   background-color: black;
+  position: relative;
 }
 
 @media (max-width: 992px) {
@@ -491,7 +533,7 @@ nav .nav_links li a {
 
 @media (max-width: 992px) {
   .red_line_container {
-    margin-top: 3%;
+    display: none;
   }
 }
 
@@ -583,18 +625,66 @@ nav .nav_links li a {
 
 @media (max-width: 992px) {
   .main_container .main_container_content h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 .main_container .main_container_content p {
   color: #524d4d;
-  padding: 0  23px 0 23px;
+  padding: 0 23px 0 23px;
 }
 
 @media (max-width: 992px) {
-  .main_container .main_container_content {
-    font-size: 1rem;
+  .main_container .main_container_content p {
+    font-size: 0.8rem;
+    padding: 0 10px 0 10px;
   }
+}
+
+.souces_container {
+  height: 80vh;
+  border: solid black 1px;
+}
+
+.footer_subscribe {
+  text-align: center;
+  height: 30vh;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer_subscribe .subscribe {
+  padding: 10px;
+}
+
+.footer_subscribe .subscribe_button {
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #ca7a66;
+  opacity: 0.7;
+}
+
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer_container .footer_contacts {
+  width: 33.3333%;
+}
+
+.footer_container .footer_social_logos {
+  width: 33.33%;
+}
+
+.footer_container .footer_social_logos a img {
+  width: 40px;
+}
+
+.footer_container .footer_content {
+  width: 33.33%;
 }
 /*# sourceMappingURL=main.css.map */

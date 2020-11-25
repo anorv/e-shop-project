@@ -1,5 +1,6 @@
 // NAV_BAR
 // Kad nav eitu kartu su HTML
+
 .position {
     position: fixed;
     width: 100%;
@@ -33,7 +34,7 @@ nav {
     min-width: 7vh;
     background-color: white;
     opacity: 0.8;
-    font-family: "Poppins", sans-serif;
+    font-family: $font;
     @include responsive-md() {
         opacity: 1;
     }
@@ -41,6 +42,9 @@ nav {
     .logo {
         img {
             width: 100px;
+            @include responsive-md() {
+                width: 90px;
+            }
         }
     }
     .nav_links {
@@ -56,7 +60,7 @@ nav {
             position: absolute;
             right: 0;
             height: 93vh;
-            top: 9.5vh;
+            top: 9.4vh;
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -66,7 +70,6 @@ nav {
             &.nav_active {
                 @include responsive-md() {
                     transform: translateX(0%);
-                
                 }
             }
         }
@@ -82,8 +85,39 @@ nav {
             }
         }
     }
+    
+}
+// Cart button
+.cart_button {
+    position: relative;
+    cursor: pointer;
+
+    img {
+        width: 35px;
+        
+    }
+
+    .cart_div {
+        position: absolute;
+        top: -9px;
+        left: 14px;
+    }
+}
+.carts_button_burger {
+    display: none;
+    @include responsive-md() {
+        display: block;
+    }
+   }
+
+.cart_button_nav {
+    display: block;
+    @include responsive-md() {
+        display: none;
+    }
 }
 
+// Burgeris
 .burger {
     display: none;
     .line {
@@ -91,6 +125,7 @@ nav {
         height: 3px;
         margin: 5px;
         background-color: black;
+        position: relative;
     }
 
     @include responsive-md() {
@@ -98,5 +133,6 @@ nav {
         cursor: pointer;
     }
 }
+
 
 // NAV BAR end...................................

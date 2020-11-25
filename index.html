@@ -17,14 +17,24 @@
           <li><a href="">Pradinis</a></li>
           <li><a href="">Apie mus</a></li>
           <li><a href="">Parduotuvė</a></li>
-          <li><a href="">Kontaktai</a></li>
+          <li><a hr ef="">Kontaktai</a></li>
           <li><a href="">Blog</a></li>
+          <!-- Card button -->
+          <div class="cart_button cart_button_nav">
+            <img src="assets/img/cart_logo.png" alt="" />
+            <div class="cart_div">0</div>
+          </div>
         </ul>
+
         <!-- Hamburger -->
         <div class="burger">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
+        </div>
+        <div class="cart_button carts_button_burger">
+          <img src="assets/img/cart_logo.png" alt="" />
+          <div class="cart_div">0</div>
         </div>
       </nav>
 
@@ -36,9 +46,9 @@
         <div class="red_line2"></div>
         <div class="red_line3"></div>
       </div>
-
+      <!-- Susipazinti Start -->
       <div class="main_container">
-        <div class = "main_conteiner_div">
+        <div class="main_conteiner_div">
           <img
             class="thumbnail main_container_img"
             src="assets/img/susipazinkime.jpg"
@@ -59,11 +69,51 @@
           </p>
         </div>
       </div>
+      <!-- susipazinti End -->
+      <!-- Prekes START -->
+      <div class="souces_container"></div>
+      <!-- Padazai ENDS -->
     </main>
-    
+
+    <footer>
+      <div class="footer_subscribe">
+        <input
+          class="subscribe"
+          type="email"
+          value=""
+          placeholder="El.paštas"
+        />
+        <button class="subscribe_button">Prenumeruoti</button>
+      </div>
+
+      <div class="footer_container">
+        <div class="footer_contacts">
+          <p>
+            Adresas: Dariaus g. 8, Kaunas<br />
+            Numeris: +3745689<br />
+            El.paštas: as@gmail.com
+          </p>
+        </div>
+        <div class="footer_social_logos">
+          <a href="https://www.facebook.com/">
+            <img src="assets/img/facebook.png" alt="" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="assets/img/instagram.png" alt="" />
+            <p>©2020 by AN</p>
+          </a>
+        </div>
+        <div class="footer_content">
+          <p>Prekių Pristatymo politika</p>
+          <p>Prekių Grąžinimo politika</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="assets\js\header.js"></script>
+    <script src="assets/libs/jquere.min.js"></script>
     <script src="assets/libs/simpleParallax.min.js"></script>
+    <script src="assets/libs/slick.min.js"></script>
     <script src="assets/js/mainHtml.js"></script>
-   
   </body>
 </html>
