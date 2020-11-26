@@ -1,0 +1,47 @@
+// Footer modalas grazinimo politikai 
+#modal_return_main, #modal_delivery_main {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(160, 93, 93, 0.4);
+    top: 0;
+    left:0;
+    display: none;
+ 
+
+    .modal_return_content, .modal_delivery_content{
+        background-color: white;
+        width: 765px;
+        padding: 1%;
+        margin: 45px auto;
+        box-shadow:7px 1px 15px -1px #000000;
+        font-family: $font;
+        letter-spacing: 2px;
+        @include responsive-md(){
+            width: 324px;
+        }
+
+        img {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        h3 {
+          color: $color_h;
+          text-align: center;
+      
+        }
+        h4{
+            color: $color_h;
+            text-align: center;
+        }
+        li{
+            color: $color_p;
+            font-size: 0.7rem;
+            text-align: justify;
+        }
+
+
+    }
+}

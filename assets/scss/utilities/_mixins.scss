@@ -1,4 +1,3 @@
-
 // Telefonui
 @mixin responsive-md {
     @media (max-width: 992px) {
@@ -17,7 +16,6 @@
         @content;
     }
 }
-
 
 // // i SCSS rasom
 //  @include responcive-md(){

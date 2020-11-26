@@ -8,4 +8,6 @@ burger.addEventListener("click", () => {
   navLinks.classList.toggle("nav_active");
 });
 
-// NAV BAR END
+
+
+

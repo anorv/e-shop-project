@@ -7,9 +7,3 @@ new simpleParallax(image, {
 });
 
 
-
-// JQARY del SLIKU
-$(document).ready(function () {
-
-
-});

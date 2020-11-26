@@ -8,21 +8,20 @@
     .subscribe {
         padding: 10px;
     }
-       .subscribe_button{
-           border: none;
-           padding: 12px;
-           cursor: pointer;
-           background-color: rgb(156, 50, 43);
-           opacity: 0.7;
-           @include responsive-md1() {
+    .subscribe_button {
+        border: none;
+        padding: 12px;
+        cursor: pointer;
+        background-color: rgb(156, 50, 43);
+        opacity: 0.7;
+        @include responsive-md1() {
             margin-top: 10px;
         }
-
-       }
+    }
 }
 // Prenumeruoti naujienlaiski Pabaiga
 
-.footer_container{
+.footer_container {
     background-color: rgb(245, 238, 238);
     background-position: center;
     background-size: cover;
@@ -37,33 +36,29 @@
     color: $color_p;
     font-size: 0.7rem;
 
-
-   
-    .footer_contacts{
+    .footer_contacts {
         width: 33.3333%;
-        
-
     }
-    .footer_social_logos{
+    .footer_social_logos {
         width: 33.33%;
         padding-top: 20px;
-        a{
+        a {
             img {
                 width: 40px;
             }
         }
-        p{
+        p {
             color: $color_p;
             opacity: 0.7;
             text-decoration: none;
         }
-
     }
-    .footer_content{
+    .footer_content {
         width: 33.33%;
-   
-         p {
+
+        p {
             cursor: pointer;
-         }
+        }
     }
 }
+// END MAIN FOOTER 
