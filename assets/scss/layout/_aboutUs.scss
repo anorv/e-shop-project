@@ -1,0 +1,106 @@
+.aboutUs_h {
+    text-align: center;
+    color:$color_h;
+    font-family: $font;
+    font-size: 2rem;
+    text-transform: uppercase;
+    @include responsive-md() {
+        font-size: 1.5rem;
+        
+     }
+
+}
+
+.aboutUs_p{
+    text-align: center;
+    color:$color_p;
+    font-family: $font;  
+    padding: 0 50px 50px 20px;
+    font-size: 1rem;
+    line-height: 2;
+    @include responsive-md() {
+       font-size: 0.7rem;
+
+    }
+   
+}
+
+
+
+
+.aboutUs1{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+
+
+    .image_one{
+        background-image: url("../img/background1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40%;
+    }
+    .image_two{
+        background-image: url("../img/souce1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20%;
+        transition: width 2s;
+     
+    }
+    .image_two:hover {
+        width: 300px;
+      }
+    .image-three{
+        background-image: url("../img/susipazinkime.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40%;
+    }
+    
+}   
+
+.aboutUs2{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    @include responsive-md() {
+        display: none;
+  
+      }
+
+    .image_four{
+        background-image: url("../img/souce3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20%;
+        transition: width 2s;
+        
+    }
+    .image_four:hover{
+        width: 300px;
+
+    }
+    .image_five{
+        background-image: url("../img/background2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60%;
+    }
+    .image-six{
+        background-image: url("../img/souce3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20%;
+        transition: width 2s;
+    }
+    .image-six:hover {
+        width: 300px;
+    }
+}   
