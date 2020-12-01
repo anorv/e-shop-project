@@ -355,7 +355,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 @media (max-width: 1125px) {
@@ -371,12 +371,6 @@ header {
   }
 }
 
-@media (max-width: 992px) {
-  body {
-    overflow: hidden;
-  }
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,7 +380,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 7vh;
   background-color: white;
   opacity: 0.8;
   font-family: "Poppins", sans-serif;
@@ -396,6 +389,10 @@ nav {
   nav {
     opacity: 1;
   }
+}
+
+nav .logo {
+  cursor: pointer;
 }
 
 nav .logo img {
@@ -429,7 +426,7 @@ nav .nav_links {
     position: absolute;
     right: 0;
     height: 93vh;
-    top: 9.4vh;
+    top: 8vh;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -441,22 +438,21 @@ nav .nav_links {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5 ease-in;
     transition: -webkit-transform 0.5 ease-in;
     -o-transition: transform 0.5 ease-in;
     transition: transform 0.5 ease-in;
     transition: transform 0.5 ease-in, -webkit-transform 0.5 ease-in;
+    display: none;
   }
 }
 
 @media (max-width: 992px) and (max-width: 992px) {
   nav .nav_links.nav_active {
-    -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -481,10 +477,12 @@ nav .nav_links li a {
   width: 35px;
 }
 
-.cart_button .cart_div {
+.cart_button .cart_div,
+.cart_button .cart_div_second {
   position: absolute;
   top: -9px;
   left: 14px;
+  color: black;
 }
 
 .carts_button_burger {
@@ -913,12 +911,11 @@ nav .nav_links li a {
 
 .souce {
   position: relative;
-  overflow: hidden;
 }
 
 .souce .souce_img {
   width: 250px;
-  padding: 10px 2px 0 2px;
+  padding: 22px 20px 0 2px;
 }
 
 .souce .add_cart {
@@ -938,5 +935,85 @@ nav .nav_links li a {
 
 .souce:hover .add_cart {
   opacity: 1;
+}
+
+.product_container {
+  max-width: 650px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.product_container .product_header {
+  width: 100%;
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 4px solid black;
+}
+
+.product_container .product_header .product_title {
+  width: 45%;
+}
+
+.product_container .product_header .product-title {
+  width: 45%;
+}
+
+.product_container .product_header .price {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product_container .product_header .quantity {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product_container .product_header .total {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */

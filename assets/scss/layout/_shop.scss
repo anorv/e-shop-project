@@ -17,10 +17,12 @@
 }
 .souce {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
+   
     .souce_img {
         width: 250px;
-        padding: 10px 2px 0 2px;
+        padding: 22px 20px 0 2px;
+      
     }
 
     .add_cart {
@@ -36,12 +38,12 @@
         padding-top: 8px;
         margin-top: 100px;
         opacity: 0;
-
-    }
+     
+       
+      
+        }
     
-    // .add_cart:hover {
-    //     opacity: 1;
-    // }
+  
 }
 .souce:hover .add_cart{
     opacity: 1;
