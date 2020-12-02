@@ -17,6 +17,11 @@
     }
 }
 
+@mixin responsive-md3 {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
 // // i SCSS rasom
 //  @include responcive-md(){
 

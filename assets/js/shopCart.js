@@ -29,7 +29,7 @@ let product = [
     name: "5 padažas",
     tag: "souce5",
     price: 7,
-    inCard: 0,
+    inCart: 0,
   },
 ];
 
@@ -120,21 +120,24 @@ function displayCard() {
   if (cartItems && proctuctContainer) {
     proctuctContainer.innerHTM = "";
     Object.values(cartItems).map((product) => {
-      proctuctContainer.innerHTML += `<tr class="product_to_sold">
-    <td><img class="souce_img_cart" src="assets/img/${product.tag}.jpg">${
-        product.name
-      }</td>
-    <td>${product.price},00€‎</td>
-    <td>${product.inCart} vnt.‎</td> 
-    <td>${product.inCart * product.price},00€‎</td>
-    </tr>`;
+      proctuctContainer.innerHTML += `<div class="product_to_sold">
+    <div><img class="souce_img_cart" src="assets/img/${product.tag}.jpg"></div>
+    <div>${product.name}</div>
+    <div>${product.price},00€‎</div>
+    <div> ${product.inCart} vnt,‎</div> 
+    <div>${product.inCart * product.price},00€‎</div>
+    <button class="cart_delet">Trinti</button>
+    </div>`;
     });
     proctuctContainer.innerHTML += `
   <div class="total_container">
   <h5 class="total_title">Iš viso:<h5>
-  <h4 class="total_sum">${cardCost},00€‎</h4>`;
-  }
-}
+  <h4 class="total_sum">${cardCost},00€‎</h4>
+  </div>`;
+  };
+};
+
 // paleidziame funkcija, kad uzsikrovus puslapiui krepselio nr sutaptu su localStorage nr
 onLoadCartNr();
 displayCard();
+
