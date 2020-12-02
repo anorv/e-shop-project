@@ -2,31 +2,31 @@ let cart = document.querySelectorAll(".add_cart");
 
 let product = [
   {
-    name: "1 padžas",
+    name: "1 padažas",
     tag: "souce1",
     price: 7,
     inCart: 0,
   },
   {
-    name: "2 padžas",
+    name: "2 padažas",
     tag: "souce2",
     price: 7,
     inCart: 0,
   },
   {
-    name: "3 padžas",
+    name: "3 padažas",
     tag: "souce3",
     price: 7,
     inCart: 0,
   },
   {
-    name: "4 padžas",
+    name: "4 padažas",
     tag: "souce4",
     price: 7,
     inCart: 0,
   },
   {
-    name: "5 padžas",
+    name: "5 padažas",
     tag: "souce5",
     price: 7,
     inCard: 0,
@@ -49,8 +49,8 @@ function onLoadCartNr() {
   if (productNumber) {
     document.querySelector(".cart_div").textContent = productNumber;
     document.querySelector(".cart_div_second").textContent = productNumber;
-  };
-};
+  }
+}
 
 function cartNr(product) {
   // kad i google localstorage idetume prekes
@@ -69,10 +69,10 @@ function cartNr(product) {
     // kad navbare 0 butu lygus papsaudus deti i krepseli toks pat
     document.querySelectorAll(".cart_div").textContent = 1;
     document.querySelectorAll(".cart_div_second").textContent = 1;
-  };
+  }
 
   setItems(product);
-};
+}
 
 function setItems(product) {
   let cartItems = localStorage.getItem("product");
@@ -84,57 +84,57 @@ function setItems(product) {
         ...cartItems,
         [product.tag]: product,
       };
-    };
+    }
     cartItems[product.tag].inCart += 1;
   } else {
     product.inCart = 1;
     cartItems = {
       [product.tag]: product,
     };
-  };
+  }
 
   localStorage.setItem("product", JSON.stringify(cartItems));
-};
+}
 
-// Funkcija suskaiciuoti bendra suma 
-function totalCost (product){
-    let cardCost = localStorage.getItem("totalCost");
+// Funkcija suskaiciuoti bendra suma
+function totalCost(product) {
+  let cardCost = localStorage.getItem("totalCost");
 
-
-    if (cardCost != null){
-         // Kadangi is localStorage mums grazina tik strings, pakeiciame su parseIn i number
+  if (cardCost != null) {
+    // Kadangi is localStorage mums grazina tik strings, pakeiciame su parseIn i number
     cardCost = parseInt(cardCost);
- localStorage.setItem("totalCost", cardCost + product.price);
-    }else {
-        localStorage.setItem("totalCost", product.price);
-    };
-
-};
+    localStorage.setItem("totalCost", cardCost + product.price);
+  } else {
+    localStorage.setItem("totalCost", product.price);
+  }
+}
 
 // kad duomenis is mano localShop atspausdintu i card.html
-// function displayCard() {
-//    let cartItems = localStorage.getItem("product");
-//   //  kai is json pajamame localStor turime ji paversti i narmalu js
-//   cartItems = JSON.parse(cartItems); 
-// console.log(cartItems);
-// let proctuctContainer = document.querySelector(".product_container");
-// if(cartItems && proctuctContainer){
+function displayCard() {
+  let cartItems = localStorage.getItem("product");
+  let cardCost = localStorage.getItem("totalCost");
+  //  kai is json pajamame localStor turime ji paversti i narmalu js obijekta
+  cartItems = JSON.parse(cartItems);
 
-//   proctuctContainer.innerHTM = '';
-//   Object.values(cartItems).map(item =>{
-//     proctuctContainer.innerHTML += 
-//     `<div class="products">
-    
-//     <img src="assets/img/${item.tag}.jpg>
-//     <span>${item.name}</span
-//     </div>`
-
-//   });
-
-
-// };
- 
-// };
+  let proctuctContainer = document.querySelector(".products");
+  if (cartItems && proctuctContainer) {
+    proctuctContainer.innerHTM = "";
+    Object.values(cartItems).map((product) => {
+      proctuctContainer.innerHTML += `<tr class="product_to_sold">
+    <td><img class="souce_img_cart" src="assets/img/${product.tag}.jpg">${
+        product.name
+      }</td>
+    <td>${product.price},00€‎</td>
+    <td>${product.inCart} vnt.‎</td> 
+    <td>${product.inCart * product.price},00€‎</td>
+    </tr>`;
+    });
+    proctuctContainer.innerHTML += `
+  <div class="total_container">
+  <h5 class="total_title">Iš viso:<h5>
+  <h4 class="total_sum">${cardCost},00€‎</h4>`;
+  }
+}
 // paleidziame funkcija, kad uzsikrovus puslapiui krepselio nr sutaptu su localStorage nr
-onLoadCartNr(); 
+onLoadCartNr();
 displayCard();
