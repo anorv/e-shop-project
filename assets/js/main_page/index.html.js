@@ -58,10 +58,11 @@ burger.addEventListener("click", () => {
 
 // Parallax ant main container img
 
-var image = document.getElementsByClassName('thumbnail');
+const image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image, {
 	delay: .6,
 	transition: 'cubic-bezier(0,0,0,1)'
 });
+
 
 

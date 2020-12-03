@@ -1,60 +1,57 @@
+.product_container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: $font;
 
-.product_container{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-family: $font;
-
-    .product_header{
-        display: flex;
-      justify-content: space-around;
-        align-items: center;
-        color: $color_h;
-        background-color: rgb(255, 251, 251);
-        border-bottom: 2px solid black;
-        @include responsive-md() {
-            display: none;
-        }
+  .product_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $color_h;
+    background-color: rgb(255, 251, 251);
+    border-bottom: 2px solid black;
+    @include responsive-md() {
+      display: none;
     }
-    
-   
+  }
 }
 
 .products {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-family: $font;
-    @include responsive-md3() {
-        width: 100%;
-        font-size: 0.8rem;
-    }
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: $font;
+  @include responsive-md3() {
+    width: 100%;
+    font-size: 0.8rem;
+  }
 
-  
-  
-      .product_to_sold{
-        display: flex;
-        justify-content: space-around;
-          align-items: center;
-          border-bottom: 2px solid rgb(209, 206, 206);
-          color: $color_p;
-          opacity: 0.8;
-        
-      
+  .product_to_sold {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(209, 206, 206);
+    color: $color_p;
+    opacity: 0.8;
+    .sauce_img_cart {
+      width: 80px;
+      padding: 0;
+      @include responsive-md() {
+        width: 60px;
       }
-  
-    .souce_img_cart {
-        width: 80px;
-        padding: 0;
-        @include responsive-md() {
-          width: 60px;
-        }
-      
     }
+    .cart_delet{
+      border: none;
+      padding: 10px;
+      color: $color_p;
+      background-color:#f5eeee; 
+      border-radius: 20%;
+    }
+  }
 }
 .total_container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: end;
-    
+  width: 80%;
+  margin: 0 auto;
+  text-align: end;
 }

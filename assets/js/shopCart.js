@@ -3,31 +3,31 @@ let cart = document.querySelectorAll(".add_cart");
 let product = [
   {
     name: "1 padažas",
-    tag: "souce1",
+    tag: "sauce1",
     price: 7,
     inCart: 0,
   },
   {
     name: "2 padažas",
-    tag: "souce2",
+    tag: "sauce2",
     price: 7,
     inCart: 0,
   },
   {
     name: "3 padažas",
-    tag: "souce3",
+    tag: "sauce3",
     price: 7,
     inCart: 0,
   },
   {
     name: "4 padažas",
-    tag: "souce4",
+    tag: "sauce4",
     price: 7,
     inCart: 0,
   },
   {
     name: "5 padažas",
-    tag: "souce5",
+    tag: "sauce5",
     price: 7,
     inCart: 0,
   },
@@ -121,23 +121,48 @@ function displayCard() {
     proctuctContainer.innerHTM = "";
     Object.values(cartItems).map((product) => {
       proctuctContainer.innerHTML += `<div class="product_to_sold">
-    <div><img class="souce_img_cart" src="assets/img/${product.tag}.jpg"></div>
+    <div><img class="sauce_img_cart" src="assets/img/${product.tag}.jpg"></div>
     <div>${product.name}</div>
     <div>${product.price},00€‎</div>
-    <div> ${product.inCart} vnt,‎</div> 
+    <div> ${product.inCart} vnt.‎</div> 
     <div>${product.inCart * product.price},00€‎</div>
     <button class="cart_delet">Trinti</button>
     </div>`;
+
     });
     proctuctContainer.innerHTML += `
   <div class="total_container">
   <h5 class="total_title">Iš viso:<h5>
   <h4 class="total_sum">${cardCost},00€‎</h4>
   </div>`;
-  };
-};
+  }
 
+}
+
+function deleteButton(){
+
+  let cartItems = localStorage.getItem("product");
+  let proctuctContainer = document.querySelector(".products");
+  //  kai is json pajamame localStor turime ji paversti i narmalu js obijekta
+  cartItems = JSON.parse(cartItems);
+ console.log(cartItems);
+  // console.log(cartItems)
+  console.log(product[0].name);
+  for(let i = 0; i < cartItems.length; i++){
+    console.log(cartItems[0].name);
+  // proctuctContainer.addEventListener('click',(e)=>{
+  //   if(e.target.classList.contains("cart_delet")){
+  //     cartItems.remove();
+  //   }
+    
+  // });
+  }
+
+
+
+}
 // paleidziame funkcija, kad uzsikrovus puslapiui krepselio nr sutaptu su localStorage nr
 onLoadCartNr();
+// paleidziam funkcija, kad rodytu krepselyje prekes
 displayCard();
-
+deleteButton()
