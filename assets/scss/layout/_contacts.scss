@@ -1,0 +1,51 @@
+.contacts{
+    background-image: url("../img/contacts.jpg");
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    @include responsive-md {
+        flex-direction: column;
+   
+       
+    }
+
+    .contacts_to_connect,.requisites {
+        font: $font;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        @include responsive-md {
+        font-size: 1rem;
+          
+     }
+     
+
+        h3{
+            color: $color_h;
+    
+        }
+        p{
+            color: $color_p;
+        }
+      
+    }  
+}
+
+.contacts_to_connect{
+    padding-top: 50px;
+    padding-right: 50px;
+    @include responsive-md {
+        padding: 0; 
+      
+     }
+     
+}
+.requisites{
+        @include responsive-md {
+        padding-bottom: 42%; 
+      
+     }
+}

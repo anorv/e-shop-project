@@ -139,30 +139,15 @@ function displayCard() {
 
 }
 
-function deleteButton(){
 
-  let cartItems = localStorage.getItem("product");
-  let proctuctContainer = document.querySelector(".products");
-  //  kai is json pajamame localStor turime ji paversti i narmalu js obijekta
-  cartItems = JSON.parse(cartItems);
- console.log(cartItems);
-  // console.log(cartItems)
-  console.log(product[0].name);
-  for(let i = 0; i < cartItems.length; i++){
-    console.log(cartItems[0].name);
-  // proctuctContainer.addEventListener('click',(e)=>{
-  //   if(e.target.classList.contains("cart_delet")){
-  //     cartItems.remove();
-  //   }
-    
-  // });
-  }
+//  });
+//   // console.log(cartItems)
+  // console.log(product[].name);
+  
 
+ 
 
-
-}
 // paleidziame funkcija, kad uzsikrovus puslapiui krepselio nr sutaptu su localStorage nr
 onLoadCartNr();
 // paleidziam funkcija, kad rodytu krepselyje prekes
 displayCard();
-deleteButton()

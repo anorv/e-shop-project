@@ -353,7 +353,6 @@ template {
 header {
   background-image: url("../img/background1.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   min-height: 70vh;
 }
@@ -1015,5 +1014,66 @@ nav .nav_links li a {
   width: 80%;
   margin: 0 auto;
   text-align: end;
+}
+
+.contacts {
+  background-image: url("../img/contacts.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contacts .contacts_to_connect, .contacts .requisites {
+  font: "Poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .contacts .contacts_to_connect, .contacts .requisites {
+    font-size: 1rem;
+  }
+}
+
+.contacts .contacts_to_connect h3, .contacts .requisites h3 {
+  color: #292424;
+}
+
+.contacts .contacts_to_connect p, .contacts .requisites p {
+  color: #524d4d;
+}
+
+.contacts_to_connect {
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 992px) {
+  .contacts_to_connect {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .requisites {
+    padding-bottom: 42%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
