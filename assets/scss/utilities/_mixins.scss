@@ -22,6 +22,11 @@
         @content;
     }
 }
+@mixin responsive-md4 {
+    @media (max-width: 542px) {
+        @content;
+    }
+}
 // // i SCSS rasom
 //  @include responcive-md(){
 

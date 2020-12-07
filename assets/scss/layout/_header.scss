@@ -97,10 +97,15 @@ nav {
         width: 35px;
     }
 
-    .cart_div,
+    .cart_div{
+        position: absolute;
+        top: -12px;
+        left: 14px;
+        color: black;
+    }
     .cart_div_second {
         position: absolute;
-        top: -9px;
+        top: -14px;
         left: 14px;
         color: black;
     }

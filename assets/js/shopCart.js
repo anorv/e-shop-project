@@ -1,4 +1,5 @@
-let cart = document.querySelectorAll(".add_cart");
+'use strict'
+let cart = document.querySelectorAll('.add_cart');
 
 let product = [
   {
@@ -35,7 +36,7 @@ let product = [
 
 // kad paspaudus mygtuka deti i krepseli veiktu
 for (let i = 0; i < cart.length; i++) {
-  cart[i].addEventListener("click", (e) => {
+  cart[i].addEventListener('click', (e) => {
     cartNr(product[i]);
     e.preventDefault();
     totalCost(product[i]);
@@ -44,11 +45,11 @@ for (let i = 0; i < cart.length; i++) {
 
 // sukurti funkcija kad perkrovus puslapi krepselio skaicius nepersikrautu
 function onLoadCartNr() {
-  let productNumber = localStorage.getItem("cartNr");
+  let productNumber = localStorage.getItem('cartNr');
 
   if (productNumber) {
-    document.querySelector(".cart_div").textContent = productNumber;
-    document.querySelector(".cart_div_second").textContent = productNumber;
+    document.querySelector('.cart_div').textContent = productNumber;
+    document.querySelector('.cart_div_second').textContent = productNumber;
   }
 }
 
@@ -137,17 +138,12 @@ function displayCard() {
   </div>`;
   }
 
+  
+
 }
 
 
-//  });
-//   // console.log(cartItems)
-  // console.log(product[].name);
-  
-
- 
-
-// paleidziame funkcija, kad uzsikrovus puslapiui krepselio nr sutaptu su localStorage nr
+// // // paleidziame funkcija, kad uzsikrovus puslapiui krepselio nr sutaptu su localStorage nr
 onLoadCartNr();
 // paleidziam funkcija, kad rodytu krepselyje prekes
 displayCard();

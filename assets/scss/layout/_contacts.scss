@@ -6,7 +6,7 @@
     height: 90vh;
     display: flex;
     justify-content: center;
-    @include responsive-md {
+    @include responsive-md4 {
         flex-direction: column;
    
        

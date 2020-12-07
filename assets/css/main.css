@@ -476,10 +476,16 @@ nav .nav_links li a {
   width: 35px;
 }
 
-.cart_button .cart_div,
+.cart_button .cart_div {
+  position: absolute;
+  top: -12px;
+  left: 14px;
+  color: black;
+}
+
 .cart_button .cart_div_second {
   position: absolute;
-  top: -9px;
+  top: -14px;
   left: 14px;
   color: black;
 }
@@ -1030,7 +1036,7 @@ nav .nav_links li a {
           justify-content: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 542px) {
   .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

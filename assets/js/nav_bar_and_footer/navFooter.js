@@ -1,3 +1,4 @@
+
 const burger = document.querySelector(".burger");
 const navLinks = document.querySelector(".nav_links");
 
