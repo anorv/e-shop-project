@@ -8,6 +8,7 @@
 
   @include responsive-md() {
     display: block;
+    margin-left: 10px;
   }
 
   .blog_content {
@@ -16,7 +17,7 @@
     width: 30%;
     box-shadow: 2px 3px 14px 1px gray;
     img {
-      width: 80%;
+      width: 100%;
       text-align: center;
       @include responsive-md() {
         width: 30%;
@@ -39,8 +40,7 @@
       cursor: pointer;
     }
     @include responsive-md() {
-      width: 87%;
-      margin: 10px;
+      width: 84%;
     }
   }
 }

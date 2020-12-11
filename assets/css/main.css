@@ -1119,6 +1119,7 @@ nav .nav_links li a {
 @media (max-width: 992px) {
   .blog_conteiner {
     display: block;
+    margin-left: 10px;
   }
 }
 
@@ -1131,7 +1132,7 @@ nav .nav_links li a {
 }
 
 .blog_conteiner .blog_content img {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
@@ -1161,8 +1162,7 @@ nav .nav_links li a {
 
 @media (max-width: 992px) {
   .blog_conteiner .blog_content {
-    width: 87%;
-    margin: 10px;
+    width: 84%;
   }
 }
 /*# sourceMappingURL=main.css.map */
